@@ -55,7 +55,7 @@ INSERT INTO Title
  (007, 'Executive', '2016-06-11 00:00:00'),
  (006, 'Lead', '2016-06-11 00:00:00'),
  (003, 'Lead', '2016-06-11 00:00:00');
-
+ 
 select * from worker order by first_name asc;
 SELECT * FROM Worker ORDER BY FIRST_NAME ASC, DEPARTMENT DESC;
 SELECT * FROM Worker WHERE FIRST_NAME NOT IN ('Vipul', 'Satish');
@@ -69,3 +69,7 @@ SELECT SALARY  FROM (
     ORDER BY SALARY DESC
 ) AS SalaryRank LIMIT 1 OFFSET 4;
 SELECT SALARY FROM Worker GROUP BY SALARY HAVING COUNT(*) > 1;
+
+
+ 
+ 
