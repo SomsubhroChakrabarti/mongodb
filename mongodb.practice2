@@ -1,0 +1,44 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class AuthSystem {
+    // Simulated database of users
+    private static Map<String, String> usersDB = new HashMap<>();
+
+    // Preloading some user credentials
+    static {
+        usersDB.put("admin", "admin123");
+        usersDB.put("user1", "password1");
+        usersDB.put("user2", "password2");
+    }
+
+    // Method to check if the provided username and password match our records
+    public static boolean authenticateUser(String username, String password) {
+        return usersDB.containsKey(username) && usersDB.get(username).equals(password);
+    }
+
+    // Method to simulate work after successful authentication
+    public static void performWork() {
+        System.out.println("Authentication successful! You now have access to perform your tasks.");
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+        
+        System.out.print("Enter your password: ");
+        String password = scanner.nextLine();
+        
+        // Check if credentials are valid
+        if (authenticateUser(username, password)) {
+            performWork();
+        } else {
+            System.out.println("Authentication failed! Please check your username and password.");
+        }
+        
+        scanner.close();
+    }
+}
