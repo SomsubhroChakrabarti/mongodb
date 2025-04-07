@@ -1,5 +1,10 @@
-12/2025
+NAME : SOMSUBHRO CHAKRABARTI
+REG NO. : 22BCE10938
+VIT MAIL ID : somsubhrochakrabarti2022@vitbhopal.ac.in
 
+-------------------------------------------------------------------
+
+12/2025
 // Software installation and task submission
 
 package practice1;
@@ -9,10 +14,9 @@ public class Testing1{
     System.out.println("Radhe Radhe");
   }
 }
-
 ------------------------------------------------------------------------
-14/2025
 
+14/2025
 import java.sql.*;
 
 public class JDBC{
@@ -39,8 +43,8 @@ public class JDBC{
     }
   }
 }
-
 ----------------------------------------------------------------------------
+
 15/2025
 import java.sql.*;
 
@@ -101,8 +105,8 @@ public class CRUD_Test {
     }
   }
 }
+-------------------------------------------------------------------------------
 
-------------------------------------------------------------------------
 17/2025
 package CRUD;
 import java.sql.Connection;
@@ -251,8 +255,7 @@ public class DropingCollection {
       System.out.println("Collection dropped successfully");
    } 
 }
-
------------------------------------------------------------------------------------
+---------------------------------------------------------------------------
 
 import com.mongodb.client.MongoDatabase; 
 import com.mongodb.MongoClient; 
@@ -277,7 +280,6 @@ public class ListOfCollection {
       } 
    }
 }
-
 ---------------------------------------------------------------------------------
 
 import java.util.HashMap;
